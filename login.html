@@ -1,0 +1,71 @@
+<head>
+
+<script type="text/javascript" language="javascript">
+
+function validate()
+{
+	var loginId = document.log.loginId;
+	if(isEmpty(loginId))
+	{
+		alert("Login Id required");
+		loginId.focus();
+		return false;
+	}
+	var pwd = document.log.pwd;
+	if(isEmpty(pwd))
+	{
+		alert("Password required");
+		pwd.focus();
+		return false;
+	}
+	return true;
+}
+
+function isEmpty(str)
+{
+	var str1 = str.value;
+	if(str1.length==0)
+	{
+		return true;
+	}
+	return false;
+}
+</script>
+</head>
+<br />
+<br />
+<h3 style="left:100px;  position:relative;">
+	SIGN IN
+</h3>
+<br />
+<br />
+<br />
+<br />
+<form name="log" onSubmit="return validate();" action="index.php?sec=loggedIn" method="Post" style="text-align:center;">
+	<table>
+		<tr>
+			<td>Login Id :</td> 
+			<td><input type="text" name="loginId" /></td>
+		</tr>
+		<tr>
+			<td>Password :</td>
+			<td><input type="password" name="pwd" /></td>
+		</tr>
+		<tr>
+			<td>Login as :</td>
+			<td>
+				<select name="type_of_user">
+					<option value="engg" >Engineer</option>
+					<option value="cust" selected>Customer</option>
+					<option value="admin">Admin</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input type="submit" name="subLogin" value="Login" />
+			<input type="reset" name="cancel" value="Cancel" />
+			<td>
+		</tr>
+	</table>
+</form>

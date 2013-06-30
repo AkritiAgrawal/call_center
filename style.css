@@ -1,0 +1,83 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #DAE2CF url(images/img01.jpg) repeat-x left top;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #3B3B3B;
+}
+#Copy
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #FFFFFF;
+	margin-top: 0;
+	line-height: 180%;
+}
+
+h1, h2, h3,h4,h5 {
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+	color: #F6B300;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	letter-spacing: 1px;
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+	
+}
+
+ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#header_container { border:1px solid #666; height:10%; left:0; position:fixed;  width:100%; top:0; overflow-x:hidden;    }
+#header{ line-height:55px; margin:0 auto; width:940px; text-align:center; }
+ 
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#parent { border:1px solid #666; height:80%;  top:70px;  position:relative;  width:100%; background:#FFFFFF; overflow-x:hidden; }
+#content{ left:500px;  position:relative; }
+
+ 
+/* Make Footer Sticky */
+#footer_container {border:1px solid #666; bottom:0; height:10%; left:0; position:fixed; width:100%;  background: #DAE2CF url(images/img01.jpg) repeat-x left top; overflow-x:hidden;	 }
+#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; font-size:xx-small; text-Align : bottom;  }
+#msg
+{
+font-size:16px;
+color:red;
+}
+#msgSuccess
+{
+font-size:16px;
+color:green;
+font-weight:bold;
+}
